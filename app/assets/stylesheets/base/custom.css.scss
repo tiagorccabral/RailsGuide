@@ -1,3 +1,5 @@
+$navbar-default-bg: black;
+
 #logo {
    font-size: 30px;
    font-weight: bold;
@@ -15,6 +17,28 @@
    background-size: auto 100%;
 }
 
+#specialjumbo {
+   top: 280px;
+   height: 500px;
+   position: relative;
+   width: 125em;
+   text-align: center;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+ul li {
+   text-align: left;
+   font-size: 25px;
+   font-weight: bold;
+   color: #5F9EA0;
+}
+
+table, th, td, tr {
+   text-align: center;
+}
+
+
 .footer {
    position: relative;
    top: 300px;
@@ -23,4 +47,32 @@
 #h1bold {
    font-weight: bold;
    font-color: #3399ff
+}
+
+footer a:hover {
+
+color: #222;
+
+}
+
+footer small {
+
+float: left;
+
+}
+
+footer ul {
+
+float: right;
+
+list-style: none;
+
+}
+
+footer ul li {
+
+float: left;
+
+margin-left: 15px;
+
 }

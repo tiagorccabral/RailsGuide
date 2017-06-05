@@ -3,9 +3,9 @@
 </head>
 
 <div class = "container">
-   <h1>Blog de Artigos</h1>
-   <%= link_to 'Novo Artigo', new_article_path %>
-   <table class="table table-striped">
+   <h1 style = "font-weight:bold">Blog de Artigos</h1><br>
+   <%= link_to 'Novo Artigo', new_article_path, class: "btn btn-success" %><br><br><br>
+   <table class="table table-bordered" style = "color: black">
      <tr>
        <th>Title</th>
        <th>Text</th>
@@ -16,15 +16,15 @@
        <tr>
          <td><%= article.title %></td>
          <td><%= article.text %></td>
-         <td><%= link_to 'Mostrar', article_path(article) %></td>
-         <td><%= link_to 'Editar', edit_article_path(article) %></td>
+         <td><%= link_to 'Mostrar', article_path(article) , class: "btn btn-info" %></td>
+         <td><%= link_to 'Editar', edit_article_path(article), class: "btn btn-primary" %></td>
          <td><%= link_to 'Excluir', article_path(article),
                  method: :delete,
-                 data: { confirm: 'Tem certeza?' } %></td>
+                 data: { confirm: 'Tem certeza?' }, class: "btn btn-danger" %></td>
        </tr>
      <% end %>
    </table>
-
-   <p><%= link_to 'Welcome', root_path %></p>
+   <br><br>
+   <p><%= link_to 'Voltar', root_path, class: "btn btn-default" %></p>
 
 </div>
