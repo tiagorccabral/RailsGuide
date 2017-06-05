@@ -1,3 +1,26 @@
 #logo {
-   font-size: 500px;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.jumbotron {
+   top: 280px;
+   height: 500px;
+   position: relative;
+   width: 125em;
+   text-align: center;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-image: url('ruby-wall.jpg');
+   background-size: auto 100%;
+}
+
+.footer {
+   position: relative;
+   top: 300px;
+}
+
+#h1bold {
+   font-weight: bold;
+   font-color: #3399ff
 }
