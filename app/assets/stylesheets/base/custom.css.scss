@@ -5,6 +5,14 @@ $navbar-default-bg: black;
    font-weight: bold;
 }
 
+* {
+   box-sizing: border-box;
+}
+
+div {
+   display: block;
+}
+
 .jumbotron {
    top: 280px;
    height: 500px;
@@ -34,8 +42,10 @@ ul li {
    color: #5F9EA0;
 }
 
-table, th, td, tr {
+td,th {
+   padding: 5px;
    text-align: center;
+   border: 1px solid black;
 }
 
 
@@ -47,6 +57,36 @@ table, th, td, tr {
 #h1bold {
    font-weight: bold;
    font-color: #3399ff
+}
+
+.comment {
+   position: relative;
+   left: 50px;
+}
+
+.timeline-header {
+   padding-right: 15px;
+   padding-left: 15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   color: black;
+   background-color: #d9d9d9;
+   border-bottom: 1px solid #d1d5da;
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+   font-weight: 600;
+   font-size: 15px;
+}
+
+.timeline-body {
+   padding-right: 10px;
+   padding-left: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #24292e;
+   background-color: #fff;
 }
 
 footer a:hover {

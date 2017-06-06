@@ -1,13 +1,23 @@
-<%= form_for([@article, @article.comments.build]) do |f| %>
-  <p>
-    <%= f.label :commenter %><br>
-    <%= f.text_field :commenter %>
-  </p>
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+<%= form_for([@article, @article.comments.build], :html => {class: "form-horizontal", role: "form"}) do |f| %>
+   <div class="form-group">
+      <div class="control-label col-sm-2">
+         <%= f.label "Autor"%><br>
+      </div>
+      <div class="col-sm-4">
+         <%= f.text_field :commenter, class: "form-control", placeholder: "Nome do autor", autofocus: true %>
+      </div>
+   </div>
+   <div class="form-group">
+      <div class="control-label col-sm-2">
+         <%= f.label "Comentário"%><br>
+      </div>
+      <div class="col-sm-6">
+         <%= f.text_area :body, class: "form-control", placeholder: "Escreva aqui seu comentário", autofocus: true, rows: 8 %>
+      </div>
+   </div>
+   <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+         <%= f.submit "Enviar", class: "btn btn-primary btn-lg" %><br>
+      </div>
+   </div>
 <% end %>
