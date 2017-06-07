@@ -70,12 +70,16 @@ td,th {
    padding-top: 10px;
    padding-bottom: 10px;
    color: black;
-   background-color: #d9d9d9;
-   border-bottom: 1px solid #d1d5da;
+   background-color: #f2f2f2;
+   border-bottom: 2px solid #d1d5da;
    border-top-left-radius: 3px;
    border-top-right-radius: 3px;
    font-weight: 600;
    font-size: 15px;
+   border-top: 1.8px solid #d1d5da;
+   border-left: 1.8px solid #d1d5da;
+   border-right: 1.8px solid #d1d5da;
+   border-bottom: 0.25px solid #d1d5da;
 }
 
 .timeline-body {
@@ -84,9 +88,12 @@ td,th {
    padding-top: 5px;
    padding-bottom: 5px;
    font-size: 14px;
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
    line-height: 1.5;
    color: #24292e;
    background-color: #fff;
+   border: 1px solid #d1d5da;
 }
 
 footer a:hover {
