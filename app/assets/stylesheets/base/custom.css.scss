@@ -35,12 +35,13 @@ div {
    transform: translate(-50%,-50%);
 }
 
-ul li {
+.specialli {
    text-align: left;
    font-size: 25px;
    font-weight: bold;
    color: #5F9EA0;
 }
+
 
 td,th {
    padding: 5px;
@@ -48,6 +49,9 @@ td,th {
    border: 1px solid black;
 }
 
+.h2normal {
+   color: black;
+}
 
 .footer {
    position: relative;
